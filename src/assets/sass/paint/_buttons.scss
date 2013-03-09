@@ -1,0 +1,22 @@
+.btn {
+	padding:6px 24px;
+	color: $white;
+	border: none;
+	text-shadow:1px 1px 1px $black;
+	outline: none;
+	display: block;
+	text-align: center;
+
+	@include breakpoint(medium) {
+		display: inline;
+		text-align: left;
+	}
+}
+
+.btn-primary {
+	background: $brandColor;
+}
+
+.btn-secondary {
+	background: $brandColorSecondary;
+}

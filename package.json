@@ -1,0 +1,34 @@
+{
+  "name": "WP Aldren",
+  "description": "WP Aldren starter theme for Houndstooth development",
+  "version": "0.1.0",
+  "author": "Houndstooth (http://madebyhoundstooth.com)",
+  "homepage": "http://madebyhoundstooth.com/wp-aldren",
+  "tags": "starter, development, skeleton, stripped, build, scaffold",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HoundstoothSTL/wp-aldren.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HoundstoothSTL/wp-aldren/issues"
+  },
+  "licenses": [
+    {
+      "type": "NA",
+      "url": "https://github.com/HoundstoothSTL/wp-aldren/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "0.4.0rc5",
+    "grunt-contrib-compass": "git://github.com/gruntjs/grunt-contrib-compass.git",
+    "grunt-contrib-copy": "https://github.com/ctalkington/grunt-contrib-copy/archive/patch4.tar.gz",
+    "grunt-contrib-concat": "git://github.com/gruntjs/grunt-contrib-concat.git",
+    "grunt-contrib-jshint": "git://github.com/gruntjs/grunt-contrib-jshint.git",
+    "grunt-contrib-watch": "git://github.com/gruntjs/grunt-contrib-watch.git",
+    "grunt-contrib-uglify": "git://github.com/gruntjs/grunt-contrib-uglify.git",
+    "grunt-contrib-mincss": "git://github.com/gruntjs/grunt-contrib-mincss.git",
+    "grunt-contrib-imagemin": "git://github.com/gruntjs/grunt-contrib-imagemin.git",
+    "grunt-contrib-clean": "git://github.com/gruntjs/grunt-contrib-clean.git"
+  }
+}

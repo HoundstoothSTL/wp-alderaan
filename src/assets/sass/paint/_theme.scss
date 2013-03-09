@@ -1,0 +1,43 @@
+html {
+
+}
+
+body {
+	background:$bodyBackgroundColor;
+	font-size: $baseFontSize +px;
+	line-height: $baseLineHeight +em;
+	font-family: $sansSerifStack;
+	color:$bodyTextColor;
+}
+
+a,
+a:active,
+a:visited {
+	cursor: pointer;
+	text-decoration: none;
+	color:$linkColor;
+}
+
+.nav {
+	background:$panelNavBackgroundColor;
+}
+
+:focus {
+	outline: none;
+}
+
+input[placeholder], 
+[placeholder], 
+*[placeholder],
+::-webkit-input-placeholder,
+::-moz-placeholder {
+	color:$placeholderColor;
+}
+
+.more:after {
+	content: " »";
+	display: inline-block;
+	padding-left: 4px;
+}
+
+
