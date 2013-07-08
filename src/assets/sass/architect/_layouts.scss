@@ -12,11 +12,6 @@ img {
 	-ms-interpolation-mode: bicubic;
 }
 
-.outer-wrapper {
-	position:relative;
-	width:100%;
-}
-
 [role="main"] {
 	position: relative;
 	margin-left:0 auto;
@@ -66,4 +61,14 @@ img {
 		padding:0; //kill padding at largest breakpoint
 	}
 
+}
+
+.oldie .container {
+	width: 960px !important;
+}
+
+.oldie .col {
+	float:left !important;
+	margin-bottom: 0;
+	padding-left: $baseSpacing+em;
 }

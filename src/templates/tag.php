@@ -3,8 +3,8 @@
  * The template for displaying the tag feed.
  *
  * @package WordPress
- * @subpackage Bolt
- * @since Bolt 0.1.0
+ * @subpackage WP Alderaan
+ * @since WP Alderaan 1.0
  */
 ?>
 
@@ -12,7 +12,7 @@
 <?php get_template_part('templates/header'); ?>
 
 
-<div class="blog archives tag-archives">
+<div class="tag-archives">
 				
 	<?php if ( have_posts() ): ?>
 		<?php while ( have_posts() ) : the_post(); ?>

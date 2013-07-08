@@ -3,8 +3,8 @@
  * Single Page Template.
  *
  * @package WordPress
- * @subpackage Bolt
- * @since Bolt 0.1.0
+ * @subpackage WP Alderaan
+ * @since WP Alderaan 1.0
  */
 ?>
 
@@ -24,7 +24,6 @@
 					<?php the_content(); ?>
 				</div>
 				<div class="span5">
-					<?php adaptive_featured_image(); ?>
 				</div>
 			</div>
 			

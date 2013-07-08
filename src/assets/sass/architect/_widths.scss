@@ -141,3 +141,27 @@
 	}
 
 }
+
+.oldie { // Just hard-code a 960 grid for old IE, because it's stupid
+
+	//Pick your poison, using colspans or semantic fractions
+	@if $colspan-grids == true {
+		// Colspans
+		$total: 960;
+		$col: 58;
+		$gutter: 24;
+		
+		.col-12				{ width: $total+px; 					}
+		.col-11				{ width: (($col*11)+($gutter*10))+px;	}
+		.col-10				{ width: (($col*10)+($gutter*9))+px; 	}
+		.col-9				{ width: (($col*9)+($gutter*8))+px;		}
+		.col-8				{ width: (($col*8)+($gutter*7))+px;		}
+		.col-7				{ width: (($col*7)+($gutter*6))+px;		}
+		.col-6 				{ width: (($col*6)+($gutter*5))+px;		}
+		.col-5 				{ width: (($col*5)+($gutter*4))+px;		}
+		.col-4				{ width: (($col*4)+($gutter*3))+px;		}
+		.col-3				{ width: (($col*3)+($gutter*2))+px;		}
+		.col-2				{ width: (($col*2)+($gutter*1))+px;		}
+		.col-1				{ width: (($col*1)+($gutter*0))+px;		}
+	}
+}

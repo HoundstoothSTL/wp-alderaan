@@ -17,11 +17,11 @@ module.exports = function(grunt) {
     var hashCss = rev('dist/assets/css/main.min.css');
 
     // Hash the JS
-    var hashJs = rev('dist/assets/scripts/scripts.min.js');
+    var hashJs = rev('dist/assets/js/app.min.js');
 
     // Update scripts.php to reference the new versions
-    var regexCss = /(wp_enqueue_style\('bolt_css',(\s*[^,]+,){2})\s*[^\)]+\);/;
-    var regexJs = /(wp_register_script\('bolt_scripts',(\s*[^,]+,){2})\s*[^,]+,\s*([^\)]+)\);/;
+    var regexCss = /(wp_enqueue_style\('alderaan_css',(\s*[^,]+,){2})\s*[^\)]+\);/;
+    var regexJs = /(wp_register_script\('alderaan_scripts',(\s*[^,]+,){2})\s*[^,]+,\s*([^\)]+)\);/;
 
     var content = grunt.file.read(scriptsPhp);
     content = content.replace(regexCss, "\$1 '" + hashCss + "');");

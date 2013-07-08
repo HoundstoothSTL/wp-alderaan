@@ -3,8 +3,8 @@
  * The search page template.
  *
  * @package WordPress
- * @subpackage Bolt
- * @since Bolt 0.1.0
+ * @subpackage WP Alderaan
+ * @since WP Alderaan 1.0
  */
 ?>
 

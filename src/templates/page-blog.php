@@ -3,15 +3,15 @@
  * Template Name: Blog
  *
  * @package WordPress
- * @subpackage Bolt
- * @since Bolt 0.1.0
+ * @subpackage WP Alderaan
+ * @since WP Alderaan 1.0
 */
 ?>
 
 <?php get_template_part('templates/head'); ?>
 <?php get_template_part('templates/header'); ?>
 
-<div class="blog blog-frontpage">
+<div class="blog-homepage">
 
 </div>
 <!-- blog: blog frontpage -->

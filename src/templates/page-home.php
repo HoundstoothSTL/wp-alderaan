@@ -3,12 +3,38 @@
  * Template Name: Home
  *
  * @package WordPress
- * @subpackage Bolt
- * @since Bolt 0.1.0
+ * @subpackage WP Alderaan
+ * @since WP Alderaan 1.0
 */
 ?>
 
-<?php get_template_part('templates/head'); ?>
-<?php get_template_part('templates/header'); ?>
+<?php 
+	Render::partial('document-head');
+	Render::partial('header'); 
 
-<?php get_template_part('templates/footer'); ?>
+	$config = [
+		'post_type' => 'post',
+		'posts_per_page' => '5'
+	];
+
+	$query = new WP_Query($config);
+
+	if ( $query->have_posts() ) :
+
+		while ( $query->have_posts() ) :
+
+			$query->the_post();
+
+			Render::partial('article');
+
+		endwhile;
+
+		wp_reset_postdata();
+
+	endif;
+
+	Render::template('sidebar');
+
+	Render::partial('footer');
+?>
+

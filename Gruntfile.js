@@ -29,7 +29,7 @@ module.exports = function(grunt) {
               '\n\n'+
               '* This file does not contain any CSS \n'+
               '* Stylesheets are located in the "assets/css/" - directory \n'+
-              '* Innovative ideas through Design, Optimization and Development @ Houndstooth http://madebyhoundstooth.com \n'+
+              '* Innovative ideas through Design & Technology @ Houndstooth http://madebyhoundstooth.com \n'+
               '*/'
     },
     meta: {
@@ -73,9 +73,6 @@ module.exports = function(grunt) {
         files: [
           {expand: true, cwd: 'components/jquery/', src: 'jquery.min.js', dest: '<%= paths.src %>/assets/js/vendor/'},
           {expand: true, cwd: 'components/modernizr/', src: 'modernizr.js', dest: '<%= paths.src %>/assets/js/vendor/'},
-          {expand: true, cwd: 'components/flexslider/', src: 'jquery.flexslider.js', dest: '<%= paths.src %>/assets/js/vendor/'},
-          {expand: true, cwd: 'components/flexslider/', src: 'flexslider.css', dest: '<%= paths.src %>/assets/sass/flexslider/'},
-          {expand: true, cwd: 'components/flexslider/img/', src: ['**'], dest: '<%= paths.src %>/assets/img/'}
         ]
       },
       dist: {

@@ -2,12 +2,12 @@
 
 //*** Let's set up some theme basics upon activation
 
-function bolt_setup() {
+function alderaan_setup() {
 	//*** ADD SIDEBARS
 	register_sidebar( array(
-		'name' => __( 'Primary Sidebar', 'bolt' ),
+		'name' => __( 'Primary Sidebar', 'alderaan' ),
 		'id' => 'primary_sidebar',
-		'description' => __( 'Primary Sidebar', 'bolt' ),
+		'description' => __( 'Primary Sidebar', 'alderaan' ),
 		'before_widget' => '',
 		'after_widget' => '',
 		'before_title' => '<h2>',
@@ -26,13 +26,13 @@ function bolt_setup() {
 	//*** This theme uses wp_nav_menu() in 2 locations
 	register_nav_menus( 
 		array(
-			'primary' => __( 'Primary Navigation', 'bolt' ),
-			'secondary' => __( 'Footer Navigation', 'bolt' )
+			'primary' => __( 'Primary Navigation', 'alderaan' ),
+			'secondary' => __( 'Footer Navigation', 'alderaan' )
 		) 
 	);
 }
 
-add_action('after_setup_theme', 'bolt_setup');
+add_action('after_setup_theme', 'alderaan_setup');
 
 // Backwards compatibility for older than PHP 5.3.0 : Taken from Roots Theme
 if (!defined('__DIR__')) { 

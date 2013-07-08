@@ -3,8 +3,8 @@
  * The template for displaying 404 pages (Not Found).
  *
  * @package WordPress
- * @subpackage Custom Tweed
- * @since Custom Tweed 1.0
+ * @subpackage WP Alderaan
+ * @since WP Alderaan 1.0
  *
  * Lightly Styled to spit out lists of pages for a sitemap
  */

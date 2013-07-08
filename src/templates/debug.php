@@ -3,8 +3,8 @@
  * Template Name: Debug
  *
  * @package WordPress
- * @subpackage Bolt
- * @since Bolt 0.1.0
+ * @subpackage WP Alderaan
+ * @since WP Alderaan 1.0
  *
  * Use this template to test out different queries and stuff from the codex
  * and see how the built in wordpress functions work like get_stylesheet_directory_uri()
@@ -23,6 +23,9 @@
 			</hgroup>
 			<p><strong>Scripts Directory= </strong><?php echo SCRIPTS_DIR; ?></p>
 			<p><strong>Styles Directory= </strong><?php echo STYLESHEET_DIR; ?></p>
+			<?php 
+				Render::partial('partial');
+			?>
 		</header>
 	</div>
 </div>

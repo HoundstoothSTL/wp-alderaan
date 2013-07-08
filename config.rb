@@ -41,7 +41,7 @@ fonts_dir             = "src/assets/font"
 # Directory where Compass stores the Grid image, and the sites images are stored
 images_dir            = "src/assets/img"
  
-# Directory where the sites' JavaScript file are stored
+# Directory where the sites' JavaScript files are stored
 javascripts_dir       = "src/assets/js"
  
 # ==============================================================================
@@ -58,7 +58,7 @@ http_css_path         = http_path + "assets/css"
 http_fonts_path       = http_path + "assets/font"
  
 # Directory where Compass stores the Grid image, and the sites images are stored
-http_images_path      = http_path + "assets/img/"
+http_images_path      = http_path + "assets/img"
  
 # Directory where the sites' JavaScript file are stored
 http_javascripts_path = http_path + "assets/js"

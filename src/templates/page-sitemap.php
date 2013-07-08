@@ -3,8 +3,8 @@
  * Template Name: Sitemap
  *
  * @package WordPress
- * @subpackage Bolt
- * @since Bolt 0.1.0
+ * @subpackage WP Alderaan
+ * @since WP Alderaan 1.0
  */
 ?>
 
@@ -13,7 +13,7 @@
 
 <div class="single-page sitemap">
 		<header>
-			<h1><?php _e('Sitemap', 'bolt'); ?></h1>
+			<h1><?php _e('Sitemap', 'alderaan'); ?></h1>
 		</header>
 		
 		<!-- Spit out all pages of site as a Sitemap  -->

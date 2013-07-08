@@ -1,4 +1,4 @@
-// All compiled into /css/core.css
+// All compiled into /css/main.css
 
 @import 'compass';
 
@@ -7,7 +7,7 @@
 
 // Globals
 @import 'globals/_clearfix';
-@import 'globals/_variables';
+@import 'project/_variables';
 @import 'globals/_mixins';
 @import 'globals/_helpers';
 @import 'globals/_print';
@@ -17,10 +17,13 @@
 @import 'development/_debug';
 
 // Components
-@import 'components/_nav';
-@import 'components/_modules';
-@import 'components/_media';
-@import 'components/_overlays';
+@import 'objects/_modules';
+@import 'objects/_media';
+@import 'objects/_overlays';
+@import 'objects/_quote';
+@import 'objects/_layout_helpers';
+@import 'objects/_forms';
+@import 'objects/_buttons';
 
 // Architect
 @import	'architect/_widths';
@@ -33,20 +36,17 @@
 // Mobile
 @import 'touch/_touch';
 
-// Plugins
-//@import 'plugins/_flexslider';
+// Typography
+@import 'typography/_type';
 
-// Paint - Theme
-@import 'paint/_type';
-@import 'paint/_forms';
-@import 'paint/_theme';
-@import 'paint/_buttons';
+//-------- Project -----------------
+@import 'project/_general';
 
-// Sections
-@import 'sections/_homepage';
-@import 'sections/_about';
-@import 'sections/_blog';
-@import 'sections/_contact';
+	// Sections
+	@import 'project/templates/_homepage';
+	@import 'project/templates/_about';
+	@import 'project/templates/_blog';
+	@import 'project/templates/_contact';
 
 // Media Queries
 @import 'responsive/responsive';
