@@ -17,10 +17,11 @@
 	<title><?php wp_title(''); ?></title>
 
     <!-- Styles : Versioned for Caching -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,100italic,300italic,400italic,500italic' rel='stylesheet' type='text/css'>
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css" rel="stylesheet">
 	
 	 <!-- Favicon & Touch Icons : Versioned for Caching -->
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/ico/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 	
     <!-- Layout Scripts (Modernizr, HTML5 Shim) -->
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/modernizr.js"></script>

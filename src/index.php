@@ -1,16 +1,15 @@
 <?php
 /**
- * The main template file.
+ * Main Template File
  *
  * @package WordPress
  * @subpackage WP Alderaan
  * @since WP Alderaan 1.0
  */
-?>
+ 
+	Render::partial('document-head');
+	Render::partial('header'); 
 
-<?php get_template_part('templates/head'); ?>
-<?php get_template_part('templates/header'); ?>	
-    
-    <?php get_template_part( 'templates/loop', 'index' ); ?>
-    		
-<?php get_template_part('templates/footer'); ?>
+	Render::partial('default');
+
+	Render::partial('footer');

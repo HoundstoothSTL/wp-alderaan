@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * Template Name: Debug
  *
@@ -8,27 +8,21 @@
  *
  * Use this template to test out different queries and stuff from the codex
  * and see how the built in wordpress functions work like get_stylesheet_directory_uri()
-*/
+ */
+ 
+	Render::partial('document-head');
+	Render::partial('header'); 
 ?>
 
-<?php get_template_part('templates/head'); ?>
-<?php get_template_part('templates/header'); ?>
-
-<div class="container">
-	<div class="hero-unit">
-		<header>
-			<hgroup>
+	<div class="container">
+		<div class="hero-unit">
+			<header>
 				<h1>Debugger Template</h1>
 				<h2>Output the Constants <small>for example</small></h2>
-			</hgroup>
-			<p><strong>Scripts Directory= </strong><?php echo SCRIPTS_DIR; ?></p>
-			<p><strong>Styles Directory= </strong><?php echo STYLESHEET_DIR; ?></p>
-			<?php 
-				Render::partial('partial');
-			?>
-		</header>
+				<p><strong>Scripts Directory= </strong><?= SCRIPTS_DIR; ?></p>
+				<p><strong>Styles Directory= </strong><?= STYLESHEET_DIR; ?></p>
+			</header>
+		</div>
 	</div>
-</div>
 
-
-<?php get_template_part('templates/footer'); ?>
+<? Render::partial('footer'); ?>

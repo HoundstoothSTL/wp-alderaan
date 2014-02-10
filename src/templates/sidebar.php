@@ -2,6 +2,4 @@
 	
 	<p>Here is the sidebar</p>
 
-	<?php Render::module('connect'); ?>
-
 </aside>

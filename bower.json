@@ -1,0 +1,10 @@
+{
+  "name": "projectpixelpress",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation",
+    "font-awesome": "~4.0.3",
+    "isotope": "latest",
+    "swiper": "~2.4.2",
+    "jquery": "2.0.0"
+  }
+}

@@ -1,16 +1,15 @@
 <?php
 /**
- * The template for displaying the archive loop.
+ * Archive Loop
  *
  * @package WordPress
  * @subpackage WP Alderaan
  * @since WP Alderaan 1.0
  */
-?>
+ 
+	Render::partial('document-head');
+	Render::partial('header'); 
 
-<?php get_template_part('templates/head'); ?>
-<?php get_template_part('templates/header'); ?>
+	Render::partial('default');
 
-
-
-<?php get_template_part('templates/footer'); ?>
+	Render::partial('footer');

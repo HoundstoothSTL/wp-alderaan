@@ -6,14 +6,11 @@
  * @subpackage WP Alderaan
  * @since WP Alderaan 1.0
 */
-?>
+ 
+	Render::partial('document-head');
+	Render::partial('header'); 
 
-<?php get_template_part('templates/head'); ?>
-<?php get_template_part('templates/header'); ?>
+	Render::partial('blog-home');
 
-<div class="blog-homepage">
+	Render::partial('footer');
 
-</div>
-<!-- blog: blog frontpage -->
-
-<?php get_template_part('templates/footer'); ?>

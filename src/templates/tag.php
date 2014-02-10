@@ -6,11 +6,10 @@
  * @subpackage WP Alderaan
  * @since WP Alderaan 1.0
  */
+
+	Render::partial('document-head');
+	Render::partial('header');
 ?>
-
-<?php get_template_part('templates/head'); ?>
-<?php get_template_part('templates/header'); ?>
-
 
 <div class="tag-archives">
 				
@@ -24,7 +23,7 @@
 	<?php else: ?>
 		
 		<header>
-			<h1>No posts to display in <?php echo single_tag_title( '', false ); ?></h1>
+			<h1>No posts to display in <?= single_tag_title( '', false ); ?></h1>
 		</header>	
 		
 	<?php endif; ?>
@@ -32,6 +31,5 @@
 	<?php if(function_exists('wp_paginate')) { wp_paginate(); } //WP Paginate is pre-bundled ?>
 				
 </div>
-<!-- blog: tag-archives -->
 
-<?php get_template_part('templates/footer'); ?>
+<?php Render::partial('footer'); ?>

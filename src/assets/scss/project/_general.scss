@@ -1,0 +1,44 @@
+html {}
+
+body {
+	position:relative;
+	background: #fff;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	font-family: $body-font-family;
+	color: $gray-dark;
+}
+
+section {
+	margin-bottom:$rem-base;
+	padding-bottom:$rem-base;
+}
+
+address {
+	font-style: normal;
+	
+	[itemprop="title"],
+	[itemprop="streetAddress"] {
+		display: block;
+	}
+}
+
+[itemprop="telephone"],
+[itemprop="email"] {
+	display:block;
+}
+
+a,
+a:active,
+a:visited {
+	cursor: pointer;
+	text-decoration: none;
+	color:$primary-color;
+	font-weight:400;
+}
+
+:focus {
+	outline: none;
+}
+
+
